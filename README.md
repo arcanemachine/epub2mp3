@@ -18,18 +18,20 @@ Credit to those who did the actual work:
 
 ## Instructions
 
-Requires Python 3 (probably already installed if you're on Linux).
+Requires `git` (obviously) and `python3`.
 
-0. Open a terminal and navigate to the root project directory (the directory that contains this `README`):
+1. Clone the repo (Requires `git`): `git clone https://github.com/arcanemachine/epub2mp3`
 
-1. (Optional but recommended) Create and activate a virtualenv
+2. Navigate to the directory that contains the new repo (the directory that contains this `README`):
+
+3. (Optional but recommended) Create and activate a virtualenv
   - `python3 -m venv venv`
   - `source venv/bin/activate`
 
-2. Install the requirements:
+4. Install the requirements:
   - `python3 -m pip install -r requirements.txt`
 
-4. Convert your `epub` to an `mp3`:
+5. Convert your `epub` to an `mp3`:
   - `./epub2mp3 your-file.epub` (Output file will be `your-file.mp3` in the same directory)
 
 ## Notes
