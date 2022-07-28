@@ -9,11 +9,12 @@ Convert an ePub to an mp3 using Microsoft's excellent Edge TTS (text-to-speech) 
 
 This is a repo I've thrown together that consists mainly of other people's work. All I've done is put everything in a single place to make it easier for myself (and you?) to use.
 
-Credit to those who did the actual work:
+**Because of the GPL 3.0 licensing used in `edge-tts`, this repo is also GPL 3.0 licensed.**
+
+## Dependencies
+
   - [epub2txt](https://github.com/ffreemt/epub2txt): Convert `epub` to `txt` (License: MIT)
   - [edge-tts](https://github.com/rany2/edge-tts): TTS module for `txt` to `mp3` conversion (License: GPL 3.0)
-
-**Because of the GPL 3.0 licensing used in `edge-tts`, this repo is also GPL 3.0 licensed.**
 
 
 ## Instructions
