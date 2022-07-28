@@ -27,4 +27,8 @@ epub2txt -f $1
 echo "Converting ${input_file_title}.txt to ${input_file_title}.mp3..."
 edge-tts --voice en-CA-LiamNeural -f ${input_file_title}.txt > ${input_file_title}.mp3
 
+# remove the txt file
+echo "Cleaning up (removing ${input_file_title}.txt)..."
+rm ${input_file_title}.txt
+
 echo "done"
