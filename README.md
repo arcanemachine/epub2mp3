@@ -18,9 +18,9 @@ Credit to those who did the actual work:
 
 ## Instructions
 
-Requires `git` (obviously) and `python3`.
+Requires `git` (obviously) and `python3` (which is probably already installed on your machine).
 
-1. Clone the repo (Requires `git`):
+1. Clone the repo:
   - `git clone https://github.com/arcanemachine/epub2mp3`
 
 3. Navigate to the directory that contains the new repo.
