@@ -1,0 +1,2 @@
+edge-tts
+epub2txt==0.1.2a0

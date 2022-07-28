@@ -1,0 +1,6 @@
+*.sw?
+*.txt
+!requirements.txt
+*.mp3
+*.epub
+venv

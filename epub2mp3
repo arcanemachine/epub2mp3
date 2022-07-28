@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# change to current directory
+cd $(dirname "$0")
+
+# validation
+if [ "$1" == "" ]; then
+  # if first argument is empty, show warning and exit with error
+  echo "First argument should contain the name of the epub file you want to convert."
+  echo "Example: 'epub2mp3 your-file.epub'"
+  exit 1
+elif [ "${1: -5}" != ".epub" ]; then
+  # if first argument does not end in '.epub', show warning and exit with error
+  echo "Input file must match: *.epub"
+  echo "Example: 'epub2mp3 your-file.epub'"
+  exit 1
+fi
+
+# strip '.epub' from end of file so we use the same title for the resulting mp3
+input_file_title=${1%?????}
+
+# convert epub to txt
+echo "Converting ${input_file_title}.epub to ${input_file_title}.txt..."
+epub2txt -f $1
+
+# convert txt to mp3
+echo "Converting ${input_file_title}.txt to ${input_file_title}.mp3..."
+edge-tts --voice en-CA-LiamNeural -f ${input_file_title}.txt > ${input_file_title}.mp3
+
+echo "done"

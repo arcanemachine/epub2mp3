@@ -1,0 +1,3 @@
+#!/bin/bash
+
+edge-tts --voice en-CA-LiamNeural -f $1 > $1.mp3

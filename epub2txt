@@ -1,0 +1,3 @@
+#!/bin/bash
+
+epub2txt -f $1
