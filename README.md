@@ -2,7 +2,9 @@
 
 Convert an ePub to an mp3 using Microsoft's excellent Edge TTS (text-to-speech) service.
 
-#### Requires Linux to run the BASH scripts. The parent repos may work with Windows. I haven't checked.
+Easy to setup and use. No account or API tokens required.
+
+#### Requires Linux to run the Bash scripts. The parent repos may work with Windows. I haven't checked.
 
 
 ## About
