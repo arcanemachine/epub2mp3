@@ -1,3 +1,4 @@
 #!/bin/bash
 
-epub2txt -f $1
+echo "Converting epub to txt..."
+epub2txt -f "$1"
